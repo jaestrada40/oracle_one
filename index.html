@@ -6,14 +6,24 @@
 <title>My First Web Page</title>
 
 </head>
+<style>
+/* center div */
+div {
+    margin: 0 auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+</style>
 <body>
-    <h1>My First Web Page</h1>
-    <p>My first paragraph.</p>
+<div>HOLA MUNDO COMO ESTAMOS</div>
 
 <script>
-    var myHeading = document.querySelector('title');
-    myHeading.textContent = 'Marca';
+    var nombre = prompt("¿Cuál es tu nombre?");
+    var edad = prompt("¿Cuál es tu edad?");
+    var ciudad = prompt("¿Cuál es tu ciudad?");
 
+    document.write("Hola " + nombre + " de " + edad + " años, de " + ciudad);
 
 </script>
 </body>
