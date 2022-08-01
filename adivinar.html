@@ -54,14 +54,27 @@ header {
     }
 
     var numeroPensado = Math.round(Math.random()*10);
-    var numeroUsuario = parseInt(prompt("Adivina el numero que estoy pensando"));
+    var intentos = 3;
+    var contador = 1;
 
-    if(numeroPensado == numeroUsuario){
-        imprimir("Has acertado");
-    }else{
-        imprimir("Has fallado" + " El numero era " + numeroPensado);
-    }
+    while (contador <= intentos){
+
+        var numeroUsuario = parseInt(prompt("Adivina el numero que estoy pensando del 0-10"));
+
+        if(numeroPensado == numeroUsuario){
+
+            alert("Has acertado, en el intento " + contador + " el numero pensado era, " + numeroPensado);
+            break;
+
+        }else{
+
+            alert("Has fallado");
+
+        }
+        contador ++;
     
+    }
+    imprimir("El numero pensado era: " + numeroPensado);
     
 
 </script>
