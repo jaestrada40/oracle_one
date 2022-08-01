@@ -1,0 +1,82 @@
+<meta charset="UTF-8">
+
+
+<html>
+<head>
+<title>My First Web Page</title>
+
+</head>
+<style>
+/* center div */
+div {
+    margin: 0 auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+/* footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+/*header*/
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+</style>
+<body>
+<header>
+<h1>My First Web Page</h1>
+</header>
+<div>HOLA MUNDO COMO ESTAMOS</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit soluta non iure ipsum illum vero ullam? Repellat voluptas officia nam quibusdam accusamus sit alias, voluptatem consequuntur corrupti, tenetur sint officiis.</p>
+
+
+<footer>
+  <p>Footer</p>
+</footer>
+<script>
+    function saltarLinea(){
+        document.write("<br>");
+    }
+    
+    function imprimir(texto){
+        document.write(texto);
+        saltarLinea();
+    }
+
+    var numeroPensado = Math.round(Math.random()*10);
+    var intentos = 3;
+    var contador = 1;
+
+    while (contador <= intentos){
+
+        var numeroUsuario = parseInt(prompt("Adivina el numero que estoy pensando del 0-10"));
+
+        if(numeroPensado == numeroUsuario){
+
+            alert("Has acertado, en el intento " + contador + " el numero pensado era, " + numeroPensado);
+            break;
+
+        }else{
+
+            alert("Has fallado");
+
+        }
+        contador ++;
+    
+    }
+    imprimir("El numero pensado era: " + numeroPensado);
+    
+
+</script>
+</body>
+</html>
