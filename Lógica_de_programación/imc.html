@@ -1,0 +1,86 @@
+<meta charset="UTF-8">
+
+
+<html>
+<head>
+<title>My First Web Page</title>
+
+</head>
+<style>
+/* center div */
+div {
+    margin: 0 auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+/* footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+/*header*/
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+</style>
+<body>
+<header>
+<h1>My First Web Page</h1>
+</header>
+<div>HOLA MUNDO COMO ESTAMOS</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit soluta non iure ipsum illum vero ullam? Repellat voluptas officia nam quibusdam accusamus sit alias, voluptatem consequuntur corrupti, tenetur sint officiis.</p>
+
+
+<footer>
+  <p>Footer</p>
+</footer>
+<script>
+    function saltarLinea(){
+        document.write("<br>");
+    }
+    
+    function imprimir(texto){
+        document.write(texto);
+        saltarLinea();
+    }
+
+    function calcularImc(peso, altura){
+        var imc = peso / (altura * altura);
+        return imc;
+    }
+
+
+    var nombre = prompt("¿Cual es tu nombre?");
+    var peso = prompt("¿Cual es tu peso?");
+    var altura = prompt("¿Cual es tu altura?");
+
+    imc = calcularImc(peso, altura);
+
+    imprimir("Hola " + nombre + " tu IMC es " + imc);
+
+    if (imc>18.5 && imc<24.9){
+        imprimir("Tu peso es normal");
+    }else if (imc>25 && imc<29.9){
+        imprimir("Tienes sobrepeso");
+    }else if (imc>30 && imc<34.9){
+        imprimir("Tienes obesidad grado 1");
+    }else if (imc>35 && imc<39.9){
+        imprimir("Tienes obesidad grado 2");
+    }else if (imc>40){
+        imprimir("Tienes obesidad grado 3");
+    }else{
+        imprimir("Tu peso es inferior al normal");
+    }
+
+</script>
+</body>
+</html>
