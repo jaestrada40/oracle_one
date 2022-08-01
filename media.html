@@ -12,17 +12,21 @@
         saltarlinea();
     }
 
-    var edadPadre = 42;
-    var edadMadre = 38;
-    var edadHijo = 15;
-    var edadHija = 12;
+    var familia = parseInt(prompt("Cuanto son en su familia: "))
+    var contador = 1;
+    var totalEdades = 0;
 
-    totalEdad = edadPadre + edadMadre + edadHijo + edadHija;
+    while (contador <= familia){
 
-    var media = totalEdad / 4;
+        edad = parseInt(prompt("Ingrese la edad del familiar: "))
+        totalEdades = totalEdades + edad;
+        contador++;
 
-    imprimir("La media de las edades es: " + media)
+    }
 
+    promedio = totalEdades / familia
+    imprimir(promedio);
+    
 
 
 </script>
