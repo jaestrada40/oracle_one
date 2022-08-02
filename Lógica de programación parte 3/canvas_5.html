@@ -10,11 +10,24 @@
 
 
     function alerta(evento){
-        console.log(evento)
-        alert("Usted ha hecho click en el canvas", MouseEvent.x, MouseEvent.y);
+        var x = evento.pageX - pantalla.offsetLeft;
+        var y = evento.pageY - pantalla.offsetTop;
+
+        alert(x + "," + y);
 
     }
 
-        pantalla.onclick = alerta;
+
+    function dibujarCirculo(evento){
+        var x = evento.pageX - pantalla.offsetLeft;
+        var y = evento.pageY - pantalla.offsetTop;
+
+        pincel.fillStyle = "red";
+        pincel.beginPath();
+        pincel.arc(x, y, 10, 0, 2 * Math.PI);
+        pincel.fill();
+    }
+
+    pantalla.onclick = dibujarCirculo;
 
 </script>
