@@ -1,0 +1,20 @@
+<canvas width="600" height="400"></canvas>
+
+
+<script>
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+
+    pincel.fillStyle = "gray";
+    pincel.fillRect(0, 0, 600, 400);
+
+
+    function alerta(evento){
+        console.log(evento)
+        alert("Usted ha hecho click en el canvas", MouseEvent.x, MouseEvent.y);
+
+    }
+
+        pantalla.onclick = alerta;
+
+</script>
