@@ -1,0 +1,33 @@
+<canvas width="600" height="400">
+
+
+</canvas>
+
+<script>
+    var pantalla = document.querySelector('canvas');
+    var lienzo = pantalla.getContext('2d');
+
+
+    lienzo.fillStyle = 'white';
+    lienzo.fillRect(0, 0, 600, 400);
+
+    lienzo.fillStyle = 'green';
+    lienzo.fillRect(0, 0, 200, 400);
+
+    lienzo.fillStyle = 'red';
+    lienzo.fillRect(400, 0, 200, 400);
+
+    lienzo.fillStyle = 'blue';
+    lienzo.beginPath();
+    lienzo.moveTo(300, 200);
+    lienzo.lineTo(200, 400);
+    lienzo.lineTo(400, 400);
+    lienzo.fill();
+
+    lienzo.fillStyle = 'gold';
+    lienzo.beginPath();
+    lienzo.arc(300, 200, 50, 0, 2 * Math.PI);
+    lienzo.fill();
+
+
+</script>
