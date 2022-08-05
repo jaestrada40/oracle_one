@@ -25,6 +25,7 @@ textarea{
 #areatexto{
     padding-top: 20px;
     padding-left: 50px;
+    height: 75%;
 }
 
 textarea#exampleFormControlTextarea1{ 
@@ -76,4 +77,21 @@ textarea:focus, input:focus, input[type]:focus {
 .copiar{
     text-align: center;
     width: 100%;
+}
+
+#botonE{
+    background-color: #052d5d;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 15px;
+ 
+}
+
+#botonD{
+    background-color: #b0b8bd;
+    color: #052d5d;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 15px;
+ 
 }
