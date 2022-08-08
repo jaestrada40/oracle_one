@@ -6,6 +6,6 @@ function init()
 
 
 function myFunction() {
-    document.getElementById("myP").style.visibility = "hidden";
-    
+    document.getElementById("imagen").style.visibility = "hidden";
+    document.getElementById("parrafo").style.visibility = "visible";
   }
