@@ -95,3 +95,7 @@ textarea:focus, input:focus, input[type]:focus {
     border-radius: 15px;
  
 }
+
+#parrafo{
+    visibility: disabled;
+}
